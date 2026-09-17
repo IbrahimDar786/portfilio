@@ -23,14 +23,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
     <!-- HEADER:   navbar + logo + hamburger  -->
-
     <header>
         <div class="container">
-            <img id="my_logo" src="/assets/ibrahim_logo.png" alt="my_logo">
+            <img id="my_logo" src="./assets/ibrahim_logo.png" alt="my_logo">
             <nav class="navbar">
                 <ul>
                     <li><a href="/">
@@ -38,7 +35,7 @@
                                     class="nav_span">Home</span>
                             </div>
                         </a></li>
-                    <li><a href="/about.html">
+                    <li><a href="./about.html">
                             <div><img class="nav_icon" src="./assets/about.png" alt="home_icon"><span
                                     class="nav_span">About</span>
                             </div>
@@ -74,9 +71,9 @@
         <section class="hero">
             <div class="hero-container">
                 <div class="left">
-                    <h2>Hi There 👋 <br> I'M <span id="name"> MOHAMMAD IBRAHIM DAR</span> <br>
-                        <span id="designation">SOFTWARE ENGINEER</span>
+                    <h2 id="hero_title">
                     </h2>
+                    <!-- <h2 id="hero_title"></h2> -->
                 </div>
                 <div class="right">
                     <img src="./assets/developer_image.jpg" alt="hero-image">
@@ -172,6 +169,48 @@
 
 
     </footer>
+
+
+    <script>
+
+        const h1 = document.getElementById('hero_title');
+
+        const text = `Hi There 👋 I'M MOHAMMAD IBRAHIM DAR, a SOFTWARE ENGINEER`;
+
+        // We'll build the final HTML string with structure
+        const fullHtml = `
+    <span>Hi There 👋</span><br>
+    <span id="name">I'M MOHAMMAD IBRAHIM DAR</span><br>
+    <span id="designation">SOFTWARE ENGINEER</span>
+`;
+
+        // Typing function (now preserves HTML structure)
+        function typeWriter(html, index) {
+            if (index < html.length) {
+                // Build the text up to index
+                const current = html.slice(0, index + 1);
+                h1.innerHTML = current; // ✅ Now we preserve HTML structure
+
+                // Wait 100ms before next character
+                setTimeout(() => {
+                    typeWriter(html, index + 1);
+                }, 100);
+            } else {
+                // After full typing, restart after 1 second
+                setTimeout(() => {
+                    typeWriter(html, 0);
+                }, 500);
+            }
+        }
+
+        // Start typing
+        typeWriter(fullHtml, 0);
+
+
+
+
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page | ibrahim</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: linear-gradient(270deg, rgb(18, 9, 35), rgb(14, 4, 42));
+            color: white;
+            font-family: "PT Mono", monospace !important;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            margin: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            height: 500px;
+            background-color: rgba(13, 41, 59, 0.693);
+            /* width: 100%; */
+            /* border: 2px solid rgb(177, 39, 39); */
+            margin-bottom: 50px;
+        }
+
+        .container .left {
+            box-sizing: border-box;
+            padding: 6px 15px;
+            height: 460px;
+            width: 460px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            /* border: 2px solid white; */
+
+        }
+
+        .container .right {
+            flex: 1;
+            /* border: 2px solid white; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .right img {
+            border-radius: 8px;
+            ;
+        }
+
+        #about_me {
+            position: static;
+            margin-bottom: 20px;
+            padding: 5px 20px;
+            background-color: rgba(164, 178, 185, 0.295);
+            border-radius: 12px;
+        }
+
+        .salutation h1 {
+            margin-top: 10px;
+            padding: 0px;
+        }
+
+        .left h2 {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .details {
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 50px;
+
+        }
+
+        .detail {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            /* background-color: rgba(164, 178, 185, 0.295); */
+            padding: 10px;
+            /* border: 0.5px solid rgba(233, 223, 223, 0.745); */
+            border-radius: 8px;
+        }
+
+        .resume_container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: space-around;
+            /* margin-bottom: 10px; */
+        }
+
+        .resume_container button {
+            font-family: "PT Mono", monospace !important;
+            font-size: 1.2rem;
+            padding: 8px 20px;
+            border-radius: 8px;
+            background-color: rgb(86, 86, 180);
+            border: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        .resume_container a {
+            text-decoration: none;
+            color: blue;
+            padding: 8px 0px;
+
+        }
+
+        /* journey */
+
+        .journey_container {
+            height: 300px;
+            /* width: 200px; */
+            border: 2px solid white;
+            margin: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            background-color: rgba(13, 41, 59, 0.693);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bio  -->
+    <div class="container">
+        <div class="left">
+            <div class="salutation">
+                <span id="about_me">About Me</span>
+                <h1>Hi, I'm Ibrahim</h1>
+            </div>
+            <h2>Software Engineer</h2>
+            <p>I am a passionate software Engineer with a strong interest in builidng modern web applications and
+                solving real-world problems. I enjoy turning ideas into clean, efficeient and user friendly solutions.
+            </p>
+            <div class="details">
+                <div class="detail">
+                    <img src="./assets/education_icon.svg" height="40px" width="40px"
+                        style="background-color: blue; border-radius: 8px;" alt="icons">
+                    <div class="text-content">
+                        <h4>Education</h4>
+                        <span>B.tech in Computer science 2026</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img src="./assets/location_icon.svg" height="40px" width="40px" alt="icons">
+                    <div class="text-content">
+                        <h4>Location</h4>
+                        <span>India</span>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img src="./assets/email_icon.svg" height="40px" width="40px" alt="icons">
+                    <div class="text-content">
+                        <h4>Email</h4>
+                        <span>daribrahim643@gmail.com</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- button + contact me -->
+            <div class="resume_container">
+                <button>Downlaod Resume</button>
+                <a href="">Contact Me ➡️</a>
+            </div>
+        </div>
+        <div class="right">
+            <img src="./assets/profile.jpeg" height="460px" width="480px" alt="profile image">
+        </div>
+    </div>
+    <!-- Journey -->
+    <div class="journey_container">
+
+    </div>
+
+</body>
+
+</html>
